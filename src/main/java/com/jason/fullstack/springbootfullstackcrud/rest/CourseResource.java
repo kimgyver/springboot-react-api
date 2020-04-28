@@ -25,8 +25,9 @@ import com.jason.fullstack.springbootfullstackcrud.service.CoursesService;
 public class CourseResource {
 	
 	@Autowired
-	@Qualifier("coursesDBService")
+	//@Qualifier("coursesDBService")
 	//@Qualifier("coursesHardcodedService")
+	@Qualifier("courseJpaRepositoryService")
 	private CoursesService courseManagementService;
 	
 
